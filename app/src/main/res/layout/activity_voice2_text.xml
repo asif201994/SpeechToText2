@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/cardview_dark_background"
+    tools:context=".Voice2Text">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editText_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:inputType="textMultiLine|textPersonName"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="184dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/background_button" />
+
+        <Button
+            android:id="@+id/btn_clr"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="37dp"
+            android:layout_marginEnd="29dp"
+            android:onClick="clear"
+            android:text="Clear" />
+    </RelativeLayout>
+
+</RelativeLayout>

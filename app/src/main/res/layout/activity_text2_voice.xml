@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:background="@color/colorPrimary"
+
+    android:padding="8dp"
+    tools:context=".Text2Voice">
+    <android.support.v7.widget.CardView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/cardview_dark_background"
+        android:elevation="8dp"
+        app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:inputType="textMultiLine|textPersonName">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:hint="Enter your text"
+                android:inputType="textMultiLine|textPersonName" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_speak"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="speak" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="save" />
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>>
+
+</RelativeLayout>
